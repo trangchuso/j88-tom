@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J88 - Giao diện Trang Chủ</title>
+    <!-- Thư viện Icon FontAwesome 6 Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="images/icon-herf.webp">
+</head>
+<body>
+
+    <!-- ================= GIAO DIỆN MÁY TÍNH (DESKTOP) ================= -->
+    <div class="desktop-view">
+        <!-- Top Bar (Đồng hồ & Nút chức năng) -->
+        <div class="dt-topbar">
+            <div class="dt-container dt-topbar-inner">
+                <div class="dt-logo">
+                    <!-- THAY LOGO CỦA BẠN TẠI ĐÂY -->
+                    <img src="images/logo.png" alt="J88 Logo">
+                </div>
+                <div class="dt-right-box">
+                    <div class="dt-clock">
+                        <span id="us-clock">Múi giờ Hoa Kỳ (UTC-4) 2026/11/17 (T3) 07:41:56</span>
+                        <span class="flag-icon">🇻🇳</span>
+                    </div>
+                    <div class="dt-auth-btns">
+                        <button class="btn-dt-login">ĐĂNG NHẬP NGAY</button>
+                        <button class="btn-dt-register">
+                            ĐĂNG KÝ
+                            <span class="badge-green">88K</span>
+                        </button>
+                        <button class="btn-dt-trial">
+                            <i class="fa-solid fa-gamepad"></i> chơi miễn phí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thanh Điều Hướng Đỏ (Desktop Nav) -->
+        <nav class="dt-navbar">
+            <ul class="dt-container dt-nav-list">
+                <li class="active">
+                    <a href="#"><i class="fa-solid fa-house"></i><span>TRANG CHỦ</span></a>
+                </li>
+                <li>
+                    <span class="badge-hot">HOT</span>
+                    <a href="#"><i class="fa-solid fa-Clover"></i><i class="fa-solid fa-dice"></i><span>NỔ HŨ</span></a>
+                </li>
+                <li>
+                    <span class="badge-hot">HOT</span>
+                    <a href="#"><i class="fa-solid fa-fish-fins"></i><span>BẮN CÁ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-chess-knight"></i><span>GAME BÀI 3D</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-spade"></i><i class="fa-solid fa-clover"></i><span>CASINO</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-futbol"></i><span>THỂ THAO</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-ticket"></i><span>XỔ SỐ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-feather-pointed"></i><span>ĐÁ GÀ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-gift"></i><span>KHUYẾN MÃI</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-mobile-screen-button"></i><span>APP</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-crown"></i><span>VIP</span></a>
+                </li>
+                <li>
+                    <span class="badge-percent">60%</span>
+                    <a href="#"><i class="fa-solid fa-handshake"></i><span>ĐẠI LÝ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-headset"></i><span>CSKH 24/7</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-shield-halved"></i><span>ĐẠI SỨ</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ================= HEADER GIAO DIỆN ĐIỆN THOẠI (MOBILE) ================= -->
+    <div class="mobile-view">
+        <header class="mb-header">
+            <button class="mb-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="mb-logo">
+                <!-- THAY LOGO MOBILE TẠI ĐÂY -->
+                <img src="images/logo.png" alt="J88 Logo">
+            </div>
+            <div class="mb-spacer"></div>
+        </header>
+    </div>
+
+    <!-- ================= BANNER SLIDER TỰ ĐỘNG (DÙNG CHUNG 6 ẢNH) ================= -->
+    <section class="banner-slider">
+        <div class="slider-track" id="slider-track">
+            <!-- THAY 6 HÌNH ẢNH BANNER CỦA BẠN TẠI ĐÂY -->
+            <div class="slide"><img src="images/banner1.jpg" alt="Banner 1"></div>
+            <div class="slide"><img src="images/banner2.png" alt="Banner 2"></div>
+            <div class="slide"><img src="images/banner3.png" alt="Banner 3"></div>
+            <div class="slide"><img src="images/banner4.png" alt="Banner 4"></div>
+            
+           
+        </div>
+    </section>
+
+    <!-- ================= DÒNG CHỮ CHẠY (MARQUEE) ================= -->
+    <div class="news-ticker">
+        <div class="ticker-inner">
+            <div class="ticker-label">
+                <i class="fa-solid fa-volume-high"></i>
+                <span class="dt-text">TIN TỨC MỚI NHẤT:</span>
+                <span class="mb-text">TIN TỨC:</span>
+            </div>
+            <div class="ticker-content">
+                <marquee scrollamount="5">
+                    888K 🎁 ĐIỂM DANH MỖI NGÀY NHẬN 378K 🎁 NỔ HŨ BẮN CÁ THẮNG THUA ĐỀU THƯỞNG 🎁 NẠP NHIỀU CƯỢC LỚN THƯỞNG 2.888.8K 🎁 HỢP TÁC ĐẠI LÝ - HOA HỒNG LÊN ĐẾN 60%
+                </marquee>
+            </div>
+            <div class="mb-url-badge">
+                <span class="dot-red"></span> URL DỄ NHỚ: J882.C
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NỘI DUNG CHÍNH MÁY TÍNH (ĐẠI SỨ THƯƠNG HIỆU) ================= -->
+    <div class="desktop-view">
+        <section class="ambassador-section">
+            <div class="section-heading">
+                <h2>ĐẠI SỨ THƯƠNG HIỆU</h2>
+                <p>Đại Sứ Thương Hiệu Độc Quyền J88</p>
+            </div>
+
+            <div class="ambassador-card">
+                <!-- THAY HÌNH ẢNH NỀN ĐẠI SỨ TẠI ĐÂY -->
+                <img src="images/ds.png" alt="Đại Sứ Thương Hiệu" class="ambassador-bg">
+                
+                <!-- Khung chứa Video nằm đè bên phải giống ảnh gốc -->
+                <div class="ambassador-video-box">
+                    <!-- THAY VIDEO ĐẠI SỨ ĐÃ TẢI VỀ TẠI ĐÂY -->
+                    <video controls autoplay muted loop poster="images/video-thumb.jpg">
+                        <source src="images/video.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner nổi bên trái màn hình Desktop -->
+        <div class="floating-left">
+            <a href="#"><img src="images/NAP 200_2.gif" alt="Nạp 200K Tặng 8888K"></a>
+            <a href="#"><img src="images/gtbb.gif" alt="Giới thiệu bạn bè"></a>
+        </div>
+    </div>
+
+    <!-- ================= NỘI DUNG CHÍNH ĐIỆN THOẠI (MOBILE) ================= -->
+    <div class="mobile-view">
+        <!-- 2 Nút Đăng ký / Đăng nhập Mobile -->
+        <div class="mb-auth-row">
+            <button class="btn-mb-register">
+                ĐĂNG KÝ
+                <span class="mb-badge-88k">88K</span>
+            </button>
+            <button class="btn-mb-login">ĐĂNG NHẬP</button>
+        </div>
+
+        <!-- Thanh Cuộn Ngang Menu Mobile -->
+        <div class="mb-category-wrapper">
+            <button class="mb-nav-arrow left" id="scroll-left"><i class="fa-solid fa-caret-left"></i></button>
+            <div class="mb-category-scroll" id="mb-cat-scroll">
+                <a href="#" class="mb-cat-item active">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>HOT NHẤT</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>NỔ HŨ</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-fish"></i>
+                    <span>BẮN CÁ</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <span>GAME BÀI</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-spade"></i><i class="fa-solid fa-clover"></i>
+                    <span>CASINO</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-regular fa-futbol"></i>
+                    <span>THỂ THAO</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>XỔ SỐ</span>
+                </a>
+                <a href="#" class="mb-cat-item">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                    <span>ĐÁ GÀ</span>
+                </a>
+            </div>
+            <button class="mb-nav-arrow right" id="scroll-right"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+
+        <!-- Lưới Game 3 Cột Mobile -->
+        <div class="mb-game-grid">
+            <!-- Hàng 1: Nổ Hũ PG -->
+            <div class="game-card">
+                <img src="images/1.png" alt="Kho Báu Aztec">
+                <div class="card-title">KHO BÁU AZTEC</div>
+            </div>
+            <div class="game-card">
+                <img src="images/2.png" alt="Đường Mạt Chược">
+                <div class="card-title">ĐƯỜNG MẠT CHƯỢC</div>
+            </div>
+            <div class="game-card">
+                <img src="images/3.png" alt="Đường Mạt Chược 2">
+                <div class="card-title">ĐƯỜNG MẠT CHƯỢC 2</div>
+            </div>
+
+            <!-- Hàng 2: Sòng Bài -->
+            <div class="game-card">
+                <img src="images/4.png" alt="SE Trực Tuyến">
+                <div class="card-title">SE TRỰC TUYẾN</div>
+            </div>
+            <div class="game-card">
+                <img src="images/5.png" alt="DG Trực Tuyến">
+                <div class="card-title">DG TRỰC TUYẾN</div>
+            </div>
+            <div class="game-card">
+                <img src="images/6.png" alt="WM Trực Tuyến">
+                <div class="card-title">WM TRỰC TUYẾN</div>
+            </div>
+
+            <!-- Hàng 3: Nổ Hũ -->
+            <div class="game-card">
+                <img src="images/7.png" alt="Kỳ Lân Mách Nước">
+                <div class="card-title">KỲ LÂN MÁCH NƯỚC</div>
+            </div>
+            <div class="game-card">
+                <img src="images/8.png" alt="Bảo Thạch Kala">
+                <div class="card-title">BẢO THẠCH KALA</div>
+            </div>
+            <div class="game-card">
+                <img src="images/9.png" alt="Thắng Mạt Chược">
+                <div class="card-title">THẮNG MẠT CHƯỢC</div>
+            </div>
+            <!-- Hàng 4: Nổ Hũ PG -->
+            <div class="game-card">
+                <img src="images/10.png" alt="Kho Báu Aztec">
+                <div class="card-title">CHỢ ĐÊM</div>
+            </div>
+            <div class="game-card">
+                <img src="images/11.png" alt="Đường Mạt Chược">
+                <div class="card-title">TẾT NGUYÊN ĐÁN</div>
+            </div>
+            <div class="game-card">
+                <img src="images/12.png" alt="Đường Mạt Chược 2">
+                <div class="card-title">CHỢ ĐÊM 2</div>
+            </div>
+
+            <!-- Hàng 5: Sòng Bài -->
+            <div class="game-card">
+                <img src="images/13.png" alt="SE Trực Tuyến">
+                <div class="card-title">BÁT CHÂU BÁU</div>
+            </div>
+            <div class="game-card">
+                <img src="images/14.png" alt="DG Trực Tuyến">
+                <div class="card-title">VƯƠNG BÀI VÔ HẠN</div>
+            </div>
+            <div class="game-card">
+                <img src="images/15.png" alt="WM Trực Tuyến">
+                <div class="card-title">CHÚC MỪNG NĂM M..</div>
+            </div>
+
+            <!-- Hàng 6: Nổ Hũ -->
+            <div class="game-card">
+                <img src="images/16.png" alt="Kỳ Lân Mách Nước">
+                <div class="card-title">JACKPOT ĐÁNH CÁ</div>
+            </div>
+            <div class="game-card">
+                <img src="images/17.png" alt="Bảo Thạch Kala">
+                <div class="card-title">BẮN CÁ NGŨ LONG</div>
+            </div>
+            <div class="game-card">
+                <img src="images/18.png" alt="Thắng Mạt Chược">
+                <div class="card-title">VUA ĐÁNH CÁ</div>
+            </div>
+        </div>
+
+        <!-- Banner Link Dễ Nhớ nổi phía trên Bottom Nav -->
+        <div class="mb-floating-link">
+            LINK DỄ NHỚ: <span>VNJ88.ONLINE</span>
+        </div>
+
+        <!-- Thanh Điều Hướng Cố Định Dưới Đáy (Bottom Navigation) -->
+        <nav class="mb-bottom-nav">
+            <a href="#" class="mb-bot-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>TRANG CHỦ</span>
+            </a>
+            <a href="#" class="mb-bot-item">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <span>HOÀN TRẢ</span>
+            </a>
+            <a href="#" class="mb-bot-item">
+                <i class="fa-solid fa-gift"></i>
+                <span>KHUYẾN MÃI</span>
+            </a>
+            <a href="#" class="mb-bot-item">
+                <i class="fa-solid fa-headset"></i>
+                <span>CSKH 24/7</span>
+            </a>
+            <a href="#" class="mb-bot-item">
+                <i class="fa-regular fa-user"></i>
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </div>
+    <!-- ================= MODAL ĐĂNG NHẬP & ĐĂNG KÝ ================= -->
+    <div class="auth-modal-overlay" id="authModal">
+        <div class="auth-modal-box">
+            <!-- Nút đóng Modal -->
+            <button type="button" class="auth-close-btn" id="closeAuthModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="auth-modal-content">
+                <!-- Cột Trái (Desktop) / Phần Trên (Mobile): Logo & Hình Đại Sứ -->
+                <div class="auth-left-col">
+                    <div class="auth-header-brand">
+                        <!-- THAY LOGO TRONG FORM TẠI ĐÂY -->
+                        <img src="images/logo.png" alt="J88 Logo" class="auth-logo">
+                        <p class="auth-slogan">ĐỈNH CAO ƯU ĐÃI - ĐỈNH CAO CHIẾN THẮNG</p>
+                    </div>
+
+                    <!-- Hình đại sứ hiển thị trên Máy tính (Hình 1 & 2) -->
+                    <div class="auth-ambassador-dt">
+                        <!-- THAY HÌNH ĐẠI SỨ MÁY TÍNH TẠI ĐÂY -->
+                        <img src="images/ds-form.png" alt="Đại sứ Desktop">
+                    </div>
+
+                    <!-- Hình đại sứ hiển thị trên Điện thoại (Hình 3 & 4) -->
+                    <div class="auth-ambassador-mb">
+                        <!-- THAY HÌNH ĐẠI SỨ ĐIỆN THOẠI TẠI ĐÂY -->
+                        <img src="images/ds-formmb.png" alt="Đại sứ Mobile">
+                    </div>
+                </div>
+
+                <!-- Cột Phải (Desktop) / Phần Dưới (Mobile): Khung Form -->
+                <div class="auth-right-col">
+                    
+                    <!-- ================= FORM ĐĂNG NHẬP ================= -->
+                    <form id="loginForm" class="auth-form active" novalidate>
+                        <!-- Tên Đăng Nhập (6-20 ký tự) -->
+                        <div class="auth-input-group">
+                            <i class="fa-solid fa-user input-icon-left"></i>
+                            <input type="text" id="loginUsername" placeholder="Tên Đăng Nhập" minlength="6" maxlength="20" required>
+                        </div>
+                        <small class="error-msg" id="loginUserErr"></small>
+
+                        <!-- Mật Khẩu (6-20 ký tự) -->
+                        <div class="auth-input-group">
+                            <i class="fa-solid fa-lock input-icon-left"></i>
+                            <input type="password" id="loginPassword" placeholder="Mật Khẩu" minlength="6" maxlength="20" required>
+                            <i class="fa-solid fa-eye-slash toggle-password" data-target="loginPassword"></i>
+                        </div>
+                        <small class="error-msg" id="loginPassErr"></small>
+
+                        <!-- Số Điện Thoại (Thêm dưới mật khẩu - đúng 10 số) -->
+                        <div class="auth-input-group phone-group">
+                            <div class="country-prefix">
+                                <span class="vn-flag">★</span> +84
+                            </div>
+                            <input type="tel" id="loginPhone" placeholder="Số Điện Thoại" maxlength="10" required>
+                        </div>
+                        <small class="error-msg" id="loginPhoneErr"></small>
+
+                        <!-- Checkbox Lưu mật khẩu -->
+                        <label class="auth-checkbox">
+                            <input type="checkbox" id="loginRemember" checked required>
+                            <span>Lưu mật khẩu và tài khoản của bạn</span>
+                        </label>
+                        <small class="error-msg" id="loginCheckErr"></small>
+
+                        <button type="submit" class="btn-auth-submit">ĐĂNG NHẬP NGAY</button>
+
+                        <p class="auth-switch-text">
+                            Bạn chưa có tài khoản <a href="#" id="switchToRegister">[ĐĂNG KÝ]</a>
+                        </p>
+
+                        <!-- 2 Nút lấy lại mật khẩu -->
+                        <div class="auth-forgot-row">
+                            <a href="#" class="btn-forgot">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>LẤY LẠI MẬT KHẨU<br>QUA SỐ ĐIỆN THOẠI</span>
+                            </a>
+                            <a href="#" class="btn-forgot">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>LẤY LẠI MẬT KHẨU<br>QUA ĐỊA CHỈ EMAIL</span>
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- ================= FORM ĐĂNG KÝ ================= -->
+                    <form id="registerForm" class="auth-form" novalidate>
+                        <!-- Tên Đăng Nhập (6-20 ký tự) -->
+                        <div class="auth-input-group">
+                            <input type="text" id="regUsername" placeholder="Tên Đăng Nhập" minlength="6" maxlength="20" required>
+                        </div>
+                        <small class="error-msg" id="regUserErr"></small>
+
+                        <!-- Mật Khẩu Thành Viên (6-20 ký tự) -->
+                        <div class="auth-input-group">
+                            <input type="password" id="regPassword" placeholder="Mật Khẩu Thành Viên" minlength="6" maxlength="20" required>
+                            <i class="fa-solid fa-eye toggle-password" data-target="regPassword"></i>
+                        </div>
+                        <small class="error-msg" id="regPassErr"></small>
+
+                        <!-- Họ Tên Thật -->
+                        <div class="auth-input-group">
+                            <input type="text" id="regFullName" placeholder="Họ Tên Thật" required>
+                        </div>
+                        <small class="error-msg" id="regNameErr"></small>
+
+                        <!-- Số Điện Thoại (10 số) -->
+                        <div class="auth-input-group phone-group">
+                            <div class="country-prefix">
+                                <span class="vn-flag">★</span> +84
+                            </div>
+                            <input type="tel" id="regPhone" placeholder="Số Điện Thoại" maxlength="10" required>
+                        </div>
+                        <small class="error-msg" id="regPhoneErr"></small>
+
+                        <!-- Checkbox Đồng ý thỏa thuận -->
+                        <label class="auth-checkbox">
+                            <input type="checkbox" id="regAgree" checked required>
+                            <span>Tôi đã hiểu và đồng ý <em>“Thỏa thuận đăng ký”</em></span>
+                        </label>
+                        <small class="error-msg" id="regCheckErr"></small>
+
+                        <button type="submit" class="btn-auth-submit">ĐĂNG KÝ NGAY</button>
+
+                        <p class="auth-switch-text">
+                            Bạn đã có tài khoản <a href="#" id="switchToLogin">[ĐĂNG NHẬP]</a>
+                        </p>
+                    </form>
+
+                    <!-- Khối Tải App (Hiển thị ở chân Form Mobile giống Hình 3 & 4) -->
+                    <div class="auth-app-download-mb">
+                        <a href="#" class="app-dl-side">
+                            <div class="app-icon-circle"><i class="fa-brands fa-android"></i></div>
+                            <span>Google Play</span>
+                        </a>
+                        <div class="app-dl-center">
+                            <strong>TẢI APP<br>THAM GIA</strong>
+                            <small>KHÔNG LO BỊ CHẶN</small>
+                        </div>
+                        <a href="#" class="app-dl-side">
+                            <div class="app-icon-circle"><i class="fa-brands fa-apple"></i></div>
+                            <span>App store</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
